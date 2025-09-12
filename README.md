@@ -1,11 +1,9 @@
 # Entregables-de-Estructuras-de-Datos
 <<<<<<< HEAD
-Tareas y entregables de Estructuras de Datos
- Nombre: Eduardo Yair Gonzalez Lopez
- No. Cuenta: 424039196
+Aqui encontrara todas mis actividades de la materia :3
 =======
 #Tareas y entregables de Estructuras de Datos
 
 ## Nombre: Eduardo Yair Gonzalez Lopez
 ## No. Cuenta: 424039196
->>>>>>> d21f026 (Subida correcta)
+>>>>>>>
