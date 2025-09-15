@@ -40,5 +40,5 @@ Cada programa puede tener instrucciones de compilación o ejecución específica
 
 ## 🚀 Tecnologías Utilizadas
 
--   [Nombre del lenguaje de programación: C]
+-   [Lenguaje de Programación: C]
   
