@@ -1,0 +1,60 @@
+// Programa con numeros pares
+
+#include <stdio.h>
+
+void impresion_inversa(int array[], int n) {
+    printf("Impresion inversa: ");
+    for (int i = n - 1; i >= 0; i--) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int array[10];   
+    int contador = 0;
+
+    // Llenar el arreglo con pares del 1 al 9
+    for (int i = 1; i < 10; i++) {
+        if (i % 2 == 0) {
+            array[contador] = i;
+            contador++;
+        }
+    }
+
+    // Impresión normal
+    printf("Impresion del array: ");
+    for (int i = 0; i < contador; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
+    
+    impresion_inversa(array, contador);
+
+    return 0;
+}
+
+// Programa 2:
+
+#include <stdio.h>
+
+void no_cuenta(int cuenta[], int n) {
+    cuenta[n - 1] = -1;  
+}
+
+int main() {
+    int cuenta[] = {4, 2, 4, 0, 3, 9, 1, 9, 6};
+    int n = sizeof(cuenta) / sizeof(cuenta[0]);
+
+    // Llamamos a la función
+    no_cuenta(cuenta, n);
+
+    // Imprimimos el resultado
+    for (int i = 0; i < n; i++) {
+        printf("%d ", cuenta[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
