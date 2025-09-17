@@ -33,13 +33,12 @@ Aquí se encuentran los programas que implementan diversos conceptos.
 
 ---
 
-### ¿Cómo correr los programas?
+### ¿Donde encontrar los programas y como correrlos?
 
-Cada programa puede tener instrucciones de compilación o ejecución específicas. Revisa el `README.md` dentro de cada subcarpeta si está disponible para obtener más detalles.
-
+Se encuentran en la direccion: `📂 code\Homework\Programas `. Se corren con un compilador para C.
 ---
 
 ## 🚀 Lenguaje Utilizado
 
--   Lenguaje de Programación: C
+- C
   
