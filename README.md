@@ -28,8 +28,9 @@ Este repositorio contiene las tareas, actividades y programas realizados para la
 Aquí se encuentran los programas que implementan diversos conceptos.
 
 1.  **`1_Programas_recursividad`**: Factorial, Factorial Recursivo
-2.  **`2_Programas_de_arreglos_unididimensionales`**: Programas que manejan arreglos unidimensionales.
-3.  **`3_Programas_de_arreglos_unidimensionales_dinamicos`**: Programa que manejan arreglos unidimensionales ingresados por el usuario.
+2.  **`2_Programas_de_arreglos_unididimensionales(No.Cuenta)`**: Programas que manejan arreglos unidimensionales.
+3.  **`3_Programas_de_arreglos_unidimensionales_dinamicos(Registro)`**: Programa que manejan arreglos unidimensionales ingresados por el usuario.
+4.  **`4_Programas_de_arreglos_unidimensionales`**: Programa que maneja valores dentro de una tabla.
 
 ---
 

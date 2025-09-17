@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Uso: %s CADENA\n", argv[0]);
+        return 1;
+    }
+
+    char *cadena = argv[1];
+    int len = strlen(cadena);
+
+    
+    for (int i = 0; i < len; i++) {
+        if (cadena[i] < 'A' || cadena[i] > 'Z') {
+            printf("NULL\n");
+            return 1;
+        }
+    }
+
+
+    char **arreglo = (char **)malloc(len * sizeof(char *));
+    if (!arreglo) {
+        perror("Error en malloc");
+        return 1;
+    }
+
+    
+    for (int i = 0; i < len; i++) {
+        char letra = cadena[i];
+        int repeticiones = letra - 'A' + 1; // Posición en el abecedario
+
+        arreglo[i] = (char *)malloc((repeticiones + 1) * sizeof(char));
+        if (!arreglo[i]) {
+            perror("Error en malloc");
+            return 1;
+        }
+
+        for (int j = 0; j < repeticiones; j++) {
+            arreglo[i][j] = letra;
+        }
+        arreglo[i][repeticiones] = '\0'; // fin de cadena
+    }
+
+    
+    for (int i = 0; i < len; i++) {
+        printf("| ");
+        for (int j = 0; arreglo[i][j] != '\0'; j++) {
+            printf("%c | ", arreglo[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("NULL\n");
+
+    
+    for (int i = 0; i < len; i++) {
+        free(arreglo[i]);
+    }
+    free(arreglo);
+
+    return 0;
+}
