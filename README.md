@@ -36,7 +36,8 @@ Aquí se encuentran los programas que implementan diversos conceptos.
 ## 📂 ¿Donde encontrar los programas y como correrlos?
 
 
-- Se encuentran en la direccion: ###` code\Homework\Programas `. Se corren con un compilador para C.
+- Se encuentran en la direccion:` code\Homework\Programas `
+- Se corren con un compilador para C.
 ---
 
 ## 🚀 Lenguaje Utilizado
