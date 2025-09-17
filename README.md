@@ -29,6 +29,7 @@ Aquí se encuentran los programas que implementan diversos conceptos.
 
 1.  **`1_Programas_recursividad`**: Factorial, Factorial Recursivo
 2.  **`2_Programas_de_arreglos_unididimensionales`**: Programas que manejan arreglos unidimensionales.
+3.  **`3_Programas_de_arreglos_unidimensionales_dinamicos`**: Programa que manejan arreglos unidimensionales ingresados por el usuario.
 
 ---
 
@@ -38,7 +39,7 @@ Cada programa puede tener instrucciones de compilación o ejecución específica
 
 ---
 
-## 🚀 Tecnologías Utilizadas
+## 🚀 Lenguaje Utilizado
 
--   [Lenguaje de Programación: C]
+-   Lenguaje de Programación: C
   
