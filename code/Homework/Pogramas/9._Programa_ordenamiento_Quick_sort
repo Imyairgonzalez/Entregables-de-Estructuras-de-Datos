@@ -1,0 +1,124 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+
+struct Node* getTail(struct Node* current) {
+    while (current != NULL && current->next != NULL) {
+        current = current->next;
+    }
+    return current;
+}
+
+
+struct Node* quickSort(struct Node* head) {
+    
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    
+    struct Node* pivot = head;
+    struct Node* current = head->next;
+    
+    
+    struct Node* smaller = NULL;
+    struct Node* equal = NULL;
+    struct Node* greater = NULL;
+    
+    
+    equal = pivot;
+    equal->next = NULL;
+    
+    
+    while (current != NULL) {
+        struct Node* next = current->next;
+        
+        if (current->data < pivot->data) {
+            // Agregar a lista smaller
+            current->next = smaller;
+            smaller = current;
+        } else if (current->data == pivot->data) {
+            // Agregar a lista equal
+            current->next = equal;
+            equal = current;
+        } else {
+            // Agregar a lista greater
+            current->next = greater;
+            greater = current;
+        }
+        
+        current = next;
+    }
+    
+    
+    smaller = quickSort(smaller);
+    greater = quickSort(greater);
+    
+    
+    
+    
+    struct Node* result = smaller;
+    if (smaller != NULL) {
+        struct Node* temp = smaller;
+        while (temp->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = equal;
+    } else {
+        result = equal;
+    }
+    
+    // Encontrar el final de equal
+    struct Node* temp = equal;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    temp->next = greater;
+    
+    return result;
+}
+
+
+void push(struct Node** headRef, int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = *headRef;
+    *headRef = newNode;
+}
+
+
+void printList(struct Node* node) {
+    while (node != NULL) {
+        printf("%d ", node->data);
+        node = node->next;
+    }
+    printf("\n");
+}
+
+
+int main() {
+    struct Node* list = NULL;
+    
+    push(&list, 5);
+    push(&list, 2);
+    push(&list, 8);
+    push(&list, 1);
+    push(&list, 3);
+    push(&list, 5);
+    push(&list, 7);
+    
+    printf("Lista original: ");
+    printList(list);
+    
+    list = quickSort(list);
+    
+    printf("Lista ordenada: ");
+    printList(list);
+    
+    return 0;
+}
