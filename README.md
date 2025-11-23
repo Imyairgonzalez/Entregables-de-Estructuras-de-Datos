@@ -32,10 +32,10 @@ Aquí se encuentran los programas que implementan diversos conceptos.
 3.  **`3_Programas_de_arreglos_unidimensionales_dinamicos(Registro)`**: Programa que manejan arreglos unidimensionales ingresados por el usuario.
 4.  **`4_Programas_de_arreglos_unidimensionales`**: Programa que maneja valores dentro de una tabla.
 5.  **'5_Programa_de_arreglos_unidimensionales_dinamicos'**: Programa que maneja valores dentro de un arreglo que cambia de tamaño.
-6. **'6_Programa_de_lista_de_ligadura_simple'**
-7. **'7_Programa_de_lista_de_ligadura_doble'**
-8. **'Programa_de_algoritmo_ordenamiento_Merge_Sort'**
-9. **'Programa_de_algoritmo_ordenamiento_Quick_Sort'**
+6. **`6_Programa_de_lista_de_ligadura_simple`**
+7. **`7_Programa_de_lista_de_ligadura_doble`**
+8. **`Programa_de_algoritmo_ordenamiento_Merge_Sort`**
+9. **`Programa_de_algoritmo_ordenamiento_Quick_Sort`**
 ---
 
 ## 📂 ¿Donde encontrar los programas y como correrlos?
